@@ -18,7 +18,7 @@
 				<h1 style="font-style: italic;">
 					<span style="color: #0000ff;">Electro</span>Phoenix
 				</h1>
-				<p>Your Gateway to Cutting-Edge Electronics</p>
+				<p>Ideas Take Flight.</p>
 			</div>
 		</div>
 	</div>

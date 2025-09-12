@@ -19,12 +19,14 @@
 			<div class="bar"></div>
 		</button>
 
-		<ul class:open={isOpen}>
-			<li><a href="#about">About</a></li>
-			<li><a href="#events">Events</a></li>
-			<li><a href="#team">Team</a></li>
+		<!-- Overlay background -->
+		<div class:overlay={isOpen} on:click={() => (isOpen = false)}></div>
 
-			<li><a href="#contact">Contact</a></li>
+		<ul class:open={isOpen}>
+			<li><a href="#about" on:click={() => (isOpen = false)}>About</a></li>
+			<li><a href="#events" on:click={() => (isOpen = false)}>Events</a></li>
+			<li><a href="#team" on:click={() => (isOpen = false)}>Team</a></li>
+			<li><a href="#contact" on:click={() => (isOpen = false)}>Contact</a></li>
 		</ul>
 	</div>
 </nav>
@@ -41,7 +43,7 @@
 			0 2px 16px 0 rgba(0, 0, 255, 0.13);
 		border-radius: 2rem;
 		padding: 0.5rem 2.5rem;
-		z-index: 100;
+		z-index: 200;
 		backdrop-filter: blur(8px);
 		min-width: 220px;
 		max-width: 90vw;
@@ -102,6 +104,8 @@
 		cursor: pointer;
 		padding: 0;
 		margin-left: 1.2rem;
+		position: relative;
+		z-index: 210; /* keep above overlay */
 	}
 	.bar {
 		width: 1.7rem;
@@ -111,60 +115,96 @@
 		border-radius: 2px;
 		transition: all 0.3s;
 	}
+
+	/* Overlay when menu open */
+	.overlay {
+		display: none;
+	}
+	.overlay.overlay {
+		display: block;
+		position: fixed;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(4px);
+		z-index: 150;
+	}
+
 	@media (max-width: 800px) {
-		.navbar {
-			padding: 0.5rem 1rem;
-		}
 		.container {
-			gap: 1rem;
+			gap: 0.8rem;
 		}
+
 		ul {
 			position: absolute;
-			top: 100%;
+			top: 110%;
 			left: 0;
 			right: 0;
-			background: rgba(255, 255, 255, 0.98);
-			box-shadow: 0 8px 32px 0 #0000ff33;
+			background: rgba(255, 255, 255, 0.96);
+			backdrop-filter: blur(12px);
+			box-shadow: 0 8px 32px rgba(0, 0, 255, 0.15);
 			border-radius: 0 0 1.5rem 1.5rem;
 			flex-direction: column;
-			align-items: stretch;
-			gap: 0.5rem;
-			padding: 1.2rem 0 1rem 0;
+			align-items: center;
+			gap: 1rem;
+			padding: 1.5rem 0;
 			max-height: 0;
 			overflow: hidden;
-			transition: max-height 0.35s cubic-bezier(0.4, 2, 0.6, 1);
-			display: none;
-		}
-		ul.open {
-			max-height: 400px;
+			opacity: 0;
+			transform: translateY(-10px);
+			transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 			display: flex;
+			z-index: 200;
 		}
+
+		ul.open {
+			max-height: 500px;
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		ul li a {
+			font-size: 1.2rem;
+			width: 100%;
+			text-align: center;
+			padding: 0.8rem 0;
+			border-radius: 0.8rem;
+		}
+
 		.hamburger {
 			display: flex;
+			width: 2rem;
+			height: 2rem;
+		}
+
+		.bar {
+			width: 1.5rem;
+			height: 3px;
+		}
+
+		/* Hamburger → X animation */
+		.hamburger[aria-expanded='true'] .bar:nth-child(1) {
+			transform: rotate(45deg) translate(5px, 5px);
+		}
+		.hamburger[aria-expanded='true'] .bar:nth-child(2) {
+			opacity: 0;
+		}
+		.hamburger[aria-expanded='true'] .bar:nth-child(3) {
+			transform: rotate(-45deg) translate(5px, -5px);
 		}
 	}
+
 	@media (max-width: 600px) {
 		.navbar {
 			top: 0.7rem;
-			padding: 0.3rem 0.3rem;
-			min-width: unset;
-			max-width: 98vw;
+			padding: 0.4rem 0.8rem;
+			max-width: 95vw;
 			border-radius: 1.2rem;
 		}
 		.logo img {
-			height: 1.5rem;
+			height: 1.6rem;
 		}
-		ul {
-			padding: 0.7rem 0 0.5rem 0;
-		}
-		.hamburger {
-			width: 1.7rem;
-			height: 1.7rem;
-			margin-left: 0.5rem;
-		}
-		.bar {
-			width: 1.2rem;
-			height: 2.5px;
+		ul li a {
+			font-size: 1.05rem;
 		}
 	}
 </style>

@@ -5,6 +5,7 @@
 	import EventSection from '$lib/Components/EventSection.svelte';
 	import MemberSection from '$lib/Components/MemberSection.svelte';
 	import ContactForm from '$lib/Components/ContactForm.svelte';
+	import Footer from '$lib/Components/Footer.svelte';
 </script>
 
 <NavBar />
@@ -13,3 +14,4 @@
 <EventSection />
 <MemberSection />
 <ContactForm />
+<Footer />
