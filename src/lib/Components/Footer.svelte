@@ -40,7 +40,8 @@
 
 	<div class="copyright">
 		<p>
-			© {new Date().getFullYear()} <span class="highlight">ELECTRO</span>PHOENIX. All rights
+			© {new Date().getFullYear()}
+			<span style="font-style: italic;"><span class="highlight">ELECTRO</span>PHOENIX.</span> All rights
 			reserved.
 		</p>
 		<p>
