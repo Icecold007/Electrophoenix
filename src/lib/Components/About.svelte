@@ -10,10 +10,9 @@
 				About <span style="color:#0000ff;">Electro</span>Phoenix
 			</h1>
 			<p class="Content" style="font-size: 18px; margin-top: 20px;">
-				ElectroPhoenix is a student-run organization dedicated to fostering innovation and
-				creativity in the field of electronics and robotics. Our mission is to provide a
-				collaborative environment where students can learn, experiment, and develop their skills in
-				these exciting areas.
+				We are the Electronics and Communication Engineering club of NEHU, focused on innovation
+				across electronics, communication, AI/ML and robotics. We learn by building projects, blogs,
+				workshops and mentorship.
 			</p>
 		</div>
 		<div class="President">
@@ -31,9 +30,10 @@
 						electrophoenix,NEHU. I believe that everyone can achieve what they want if they have the
 						dedication to put in the work. Doesn’t matter who you are and where you come from, if
 						you are serious about your work no one can stop you from achieving it. That is what i
-						expect from everyone in this club- a dedication to achieve heights no one has ever
+						expect from everyone in this club, a dedication to achieve heights no one has ever
 						crossed. I encourage everyone to come and join us and be a part of this great club where
-						we discuss,collaborate and join hands to take our professional career to the next level.
+						we discuss, collaborate and join hands to take our professional career to the next
+						level.
 					</p>
 				</div>
 			</div>

@@ -7,7 +7,7 @@
 <SectionWrapper divId="/">
 	<div class="hero-bg">
 		<div class="bg-canvas" aria-hidden="true">
-			<NeuralNetwork bg="transparent" />
+			<!-- <NeuralNetwork bg="transparent" /> -->
 		</div>
 
 		<div class="hero">
