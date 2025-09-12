@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 
-	// Default values for desktop
 	export let particleCount = 600;
 	export let maxConnDist = 90;
 	export let hoverRadius = 120;
@@ -60,7 +59,6 @@
 					this.vy += ny * force * 0.6;
 				}
 			} else {
-				// Restore to original position and radius at the same speed as drift
 				this.x += (this.ox - this.x) * drift;
 				this.y += (this.oy - this.y) * drift;
 				this.r += (this.origR - this.r) * drift;
@@ -277,13 +275,12 @@
 
 	let cleanupEvents: (() => void) | null = null;
 
-	// --- Responsive tuning for mobile ---
 	function tuneForMobile() {
 		if (typeof window === 'undefined') return; // SSR guard
 		if (window.innerWidth <= 600) {
-			particleCount = 220; // fewer particles
-			maxConnDist = 60; // shorter lines
-			drift = 0.45; // faster movement
+			particleCount = 220;
+			maxConnDist = 60;
+			drift = 0.45;
 		} else if (window.innerWidth <= 900) {
 			particleCount = 350;
 			maxConnDist = 75;
