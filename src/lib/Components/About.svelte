@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ayaan from '$lib/Assets/ayaan.jpg';
+	import ayaan from '$lib/assets/ayaan.jpg';
 </script>
 
 <div class="About-club">
