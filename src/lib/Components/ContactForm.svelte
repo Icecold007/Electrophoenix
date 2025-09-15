@@ -11,14 +11,6 @@
 	}
 </script>
 
-<svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-		rel="stylesheet"
-	/>
-</svelte:head>
 <SectionWrapper divId="contact">
 	<div class="contact-section">
 		<h2 class="contact-heading">
@@ -97,7 +89,7 @@
 	}
 
 	.contact-form {
-		background: #fff;
+		/* background: #fff; */
 		border-radius: 1.5rem;
 		box-shadow:
 			0 10px 40px rgba(0, 0, 255, 0.1),

@@ -189,7 +189,7 @@
 	}
 
 	.member-card {
-		background: #fff;
+		/* background: #fff; */
 		border-radius: 1.5rem;
 		box-shadow: 0 4px 24px 0 rgba(13, 183, 217, 0.1);
 		display: flex;
@@ -209,7 +209,7 @@
 		box-shadow:
 			0 8px 32px 0 #0000ffbb,
 			0 2px 16px 0 rgba(0, 0, 255, 0.13);
-		border-color: #0000ff;
+		border-color: #3636df;
 	}
 
 	.member-img-wrap {

@@ -1,24 +1,26 @@
 <script lang="ts">
 	import NeuralNetwork from './NeuralNetwork.svelte';
+	import logo2 from '$lib/assets/logo3.png';
 	import logo from '$lib/assets/logo.png';
 	import SectionWrapper from './SectionWrapper.svelte';
+	import particles from '$lib/assets/particles.png';
 </script>
 
 <SectionWrapper divId="/">
 	<div class="hero-bg">
 		<div class="bg-canvas" aria-hidden="true">
-			<!-- <NeuralNetwork bg="transparent" /> -->
+			<NeuralNetwork bg="transparent" />
 		</div>
 
 		<div class="hero">
 			<div class="logo-container">
-				<img src={logo} alt="ElectroPhoenix Logo" class="logo" />
+				<img src={logo2} alt="ElectroPhoenix Logo" class="logo" />
 			</div>
 			<div class="hero-text">
 				<h1 style="font-style: italic;">
 					<span style="color: #0000ff;">Electro</span>Phoenix
 				</h1>
-				<p>Ideas Take Flight.</p>
+				<p>Where Ideas Take Flight.</p>
 			</div>
 		</div>
 	</div>
@@ -47,12 +49,13 @@
 		position: relative;
 		z-index: 2;
 		display: flex;
+		justify-content: center;
 		align-items: center;
 		gap: 0;
 		width: 100vw;
 		min-height: 40vh;
 		box-sizing: border-box;
-		padding: 3rem;
+		padding: 10rem;
 		background: transparent;
 	}
 

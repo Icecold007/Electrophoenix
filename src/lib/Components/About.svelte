@@ -50,7 +50,7 @@
 		min-height: 100vh;
 		width: 100vw;
 		text-align: center;
-		padding: 2rem;
+		padding: 20rem;
 		overflow-x: hidden;
 		box-sizing: border-box;
 	}

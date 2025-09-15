@@ -135,7 +135,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: 2.5rem; /* <-- Add this line for extra space */
+		margin-top: 2.5rem;
 	}
 
 	.slide {
@@ -169,7 +169,7 @@
 		opacity: 0.2;
 	}
 	.slide-content {
-		background: #fff;
+		/* background: #fff; */
 		border-radius: 2rem;
 		box-shadow: 0 8px 32px 0 rgba(0, 0, 255, 0.13); /* blue shadow */
 		padding: 3rem 2.5rem 2.5rem 2.5rem;
@@ -206,7 +206,7 @@
 			0 2px 16px 0 rgba(0, 0, 255, 0.13);
 		margin-bottom: 2rem;
 		animation: pulse-glow 2.2s infinite cubic-bezier(0.4, 2, 0.6, 1);
-		background: #f6f6f6;
+		/* background: #f6f6f6; */
 	}
 	@keyframes pulse-glow {
 		0% {
@@ -246,7 +246,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		background: #fff;
+		/* background: #fff; */
 		border: 2px solid #0000ff;
 		color: #0000ff;
 		font-size: 2rem;
@@ -288,7 +288,7 @@
 		width: 0.9rem;
 		height: 0.9rem;
 		border-radius: 50%;
-		background: #e0e0e0;
+		/* background: #e0e0e0; */
 		cursor: pointer;
 		transition:
 			background 0.2s,

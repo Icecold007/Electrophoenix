@@ -1,6 +1,7 @@
 <script>
 	import linkedin from '$lib/assets/linkedin.svg';
 	import instagram from '$lib/assets/ig.svg';
+
 	import logo from '$lib/assets/logo.png';
 	import whatsapp from '$lib/assets/wp.svg';
 </script>

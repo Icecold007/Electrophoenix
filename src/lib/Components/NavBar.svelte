@@ -37,7 +37,7 @@
 		top: 1.5rem;
 		left: 50%;
 		transform: translateX(-50%);
-		background: rgba(255, 255, 255, 0.92);
+		/* background: rgba(255, 255, 255, 0.92); */
 		box-shadow:
 			0 8px 32px 0 #0000ff33,
 			0 2px 16px 0 rgba(0, 0, 255, 0.13);
@@ -84,7 +84,6 @@
 			color 0.18s,
 			box-shadow 0.18s;
 		position: relative;
-		font-style: italic;
 	}
 	ul li a:hover,
 	ul li a:focus {
@@ -139,7 +138,7 @@
 			top: 110%;
 			left: 0;
 			right: 0;
-			background: rgba(255, 255, 255, 0.96);
+			/* background: rgba(255, 255, 255, 0.96); */
 			backdrop-filter: blur(12px);
 			box-shadow: 0 8px 32px rgba(0, 0, 255, 0.15);
 			border-radius: 0 0 1.5rem 1.5rem;
